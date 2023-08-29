@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id ="ff" class="org.spring.model.Employee">
+        <property name="name" value="Muhammed"></property>
+        <property name="age" value="22"></property>
+        <property name="salary" value="12000"></property>
+    </bean>
+
+
+    <bean id="person" class = "org.spring.model.Person">
+        <property name="id" value="1"></property>
+        <property name="name" value="Ali"></property>
+        <property name="age" value="14"></property>
+        <property name="salary" value="5000"></property>
+    </bean>
+
+
+</beans>
