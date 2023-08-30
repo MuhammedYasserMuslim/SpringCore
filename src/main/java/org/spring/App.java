@@ -4,6 +4,7 @@ package org.spring;
 import org.spring.configuration.Config;
 import org.spring.model.Department;
 import org.spring.model.Employee;
+import org.spring.model.Person;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App {
@@ -12,12 +13,20 @@ public class App {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(Config.class);
 
-        Employee employee = context.getBean("employee",Employee.class);
-        Department department=new Department(1L,"IT");
-        employee.setId(1L);employee.setName("Muhammed");employee.setAge(22);employee.setSalary(12000);
-        employee.setDepartment(department);
 
-        employee.getAll();
+        Person person = context.getBean("personBean", Person.class);
+        Department department = context.getBean("depBean",Department.class);
+
+        department.setId(1L);department.setName("IT");
+
+
+        person.setId(1L);person.setName("Muhammed");person.setAge(22);
+        person.setDepartment(department);
+
+
+
+        person.toString();
+
 
 
 

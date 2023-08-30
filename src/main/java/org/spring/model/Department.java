@@ -32,12 +32,5 @@ public class Department {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        System.out.println( "Department{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}');
-        return null;
-    }
+
 }
